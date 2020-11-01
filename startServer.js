@@ -3,6 +3,8 @@
 import { SERVER_CONFIG } from './config'
 
 const { PORT } = SERVER_CONFIG
+// importing PORT from SERVER_CONFIG which is exporting PORT and some other value
+// SERVER_CONFIG contains some process.env files
 
 const startServer = async (app) => {
   try {
