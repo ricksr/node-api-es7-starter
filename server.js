@@ -1,4 +1,5 @@
 'use strict'
 
 require('@babel/register')
-require('./app')
+// require('./app')
+require('./test')
