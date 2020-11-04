@@ -4,6 +4,7 @@ import { ResponseBody, expressUtils } from '../helpers'
 import HealthRouter from './Health'
 import VersionRouter from './Version'
 import LandingPageRouter from './LandingPage'
+import MemberRouter from './Members'
 
 const { middleware, resHandler } = expressUtils
 const { handleResponse } = resHandler
@@ -12,6 +13,7 @@ const Routes = [
   { path: '/health', router: HealthRouter },
   { path: '/version', router: VersionRouter },
   { path: '/', router: LandingPageRouter },
+  { path: '/members', router: MemberRouter },
 ]
 
 Routes.init = (app) => {
