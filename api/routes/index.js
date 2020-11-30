@@ -5,6 +5,7 @@ import HealthRouter from './Health'
 import VersionRouter from './Version'
 import LandingPageRouter from './LandingPage'
 import MemberRouter from './Members'
+import AdsRouter from './Ads'
 
 const { middleware, resHandler } = expressUtils
 const { handleResponse } = resHandler
@@ -13,7 +14,9 @@ const Routes = [
   { path: '/health', router: HealthRouter },
   { path: '/version', router: VersionRouter },
   { path: '/', router: LandingPageRouter },
+  // Testing Purpose - child coder
   { path: '/members', router: MemberRouter },
+  { path: '/ads', router: AdsRouter }
 ]
 
 Routes.init = (app) => {
